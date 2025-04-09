@@ -5,99 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reberry - Women's Fashion</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff4f7;
-      color: #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1000px;
-      width: 100%;
-      background-color: #ffffff;
-      border-radius: 20px;
-      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
-      overflow: hidden;
-    }
-
-    .left {
-      flex: 1;
-      padding: 40px;
+      background: url('https://images.unsplash.com/photo-1612423284934-285fd7c5c6ae') no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      background: rgba(170, 46, 100, 0.85);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      background: rgba(0, 0, 0, 0.4);
     }
 
-    .left h1 {
-      font-size: 2.8rem;
-      color: #aa2e64;
-      margin-bottom: 20px;
+    .main-content h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
 
-    .left p {
+    .main-content p {
       font-size: 1.2rem;
       margin-bottom: 30px;
-      color: #555;
     }
 
-    .left a {
-      display: inline-block;
-      padding: 12px 28px;
+    .main-content a {
       background-color: #aa2e64;
       color: #fff;
+      padding: 14px 32px;
+      border: none;
       border-radius: 30px;
       text-decoration: none;
-      font-size: 1rem;
       font-weight: bold;
+      font-size: 1rem;
       transition: background-color 0.3s ease;
     }
 
-    .left a:hover {
+    .main-content a:hover {
       background-color: #8d254e;
     }
 
-    .right {
-      flex: 1;
-    }
-
-    .right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .right, .left {
-        width: 100%;
-      }
+    footer {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left">
-      <h1>REBERRY</h1>
-      <p>Trendy. Comfortable. Affordable.<br>Elevate your everyday style with Reberry.</p>
-      <a href="https://www.myntra.com/reberry" target="_blank">Shop Now</a>
-    </div>
-    <div class="right">
-      <img src="https://images.unsplash.com/photo-1618354691373-83f4134973d7" alt="Women's Fashion" />
-    </div>
+
+  <header>
+    <h1>REBERRY</h1>
+  </header>
+
+  <div class="main-content">
+    <h2>Discover Bold, Beautiful & Affordable Styles</h2>
+    <p>Shop Reberry – Your go-to fashion destination on Myntra</p>
+    <a href="https://www.myntra.com/reberry" target="_blank">Shop Now</a>
   </div>
+
+  <footer>
+    &copy; 2025 Reberry. All rights reserved.
+  </footer>
+
 </body>
 </html>
