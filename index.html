@@ -2,37 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reberry - Women's Clothing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reberry - Women's Fashion</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #fcefee;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff4f7;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
-    h1 {
-      color: #c2185b;
-      font-size: 36px;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
     }
-    p {
-      font-size: 20px;
+
+    .left {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left h1 {
+      font-size: 2.8rem;
+      color: #aa2e64;
+      margin-bottom: 20px;
+    }
+
+    .left p {
+      font-size: 1.2rem;
       margin-bottom: 30px;
+      color: #555;
     }
-    a {
+
+    .left a {
       display: inline-block;
-      padding: 14px 28px;
-      background-color: #c2185b;
-      color: white;
+      padding: 12px 28px;
+      background-color: #aa2e64;
+      color: #fff;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 18px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .left a:hover {
+      background-color: #8d254e;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+    .right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .right, .left {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>REBERRY</h1>
-  <p>Discover Trendy & Affordable Women's Wear</p>
-  <a href="https://www.myntra.com/reberry" target="_blank">Shop Now</a>
+  <div class="container">
+    <div class="left">
+      <h1>REBERRY</h1>
+      <p>Trendy. Comfortable. Affordable.<br>Elevate your everyday style with Reberry.</p>
+      <a href="https://www.myntra.com/reberry" target="_blank">Shop Now</a>
+    </div>
+    <div class="right">
+      <img src="https://images.unsplash.com/photo-1618354691373-83f4134973d7" alt="Women's Fashion" />
+    </div>
+  </div>
 </body>
 </html>
